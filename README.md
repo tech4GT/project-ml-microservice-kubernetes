@@ -1,4 +1,49 @@
-[![CircleCI](https://circleci.com/gh/andresaaap/Operationalize-a-Machine-Learning-Microservice-API.svg?style=svg)](https://circleci.com/gh/andresaaap/Operationalize-a-Machine-Learning-Microservice-API)
+[![CircleCI](https://circleci.com/gh/andresaaap/Operationalize-a-Machine-Learning-Microservice-API.svg?style=svg)](https://circleci.com/gh/tech4gt/project-ml-microservice-kubernetes)
+# Cloud DevOps, Scaling Microservices
+
+The project's goal is to operationalize a machine learning microservice using kubernetes. We oredict housing prices in Boston.
+
+
+### Dependencies
+
+- Docker
+- Virtualbox
+
+For Mac:
+
+```
+brew cask install virtualbox
+```
+
+- Minikube
+
+```
+brew cask install minikube
+```
+
+
+### Run Summary
+
+
+1. You should have a virtual machine like VirtualBox and minikube installed, as per the project environmet instructions. To start a local cluster, type the terminal command:
+```
+minikube start
+```
+
+2. To deploy this application in kubernetes run:
+```
+./run_kubernetes.sh
+```
+
+3. After you’ve called run_kubernetes.sh, and a pod is up and running, make a prediction using a separate terminal tab and run 
+```
+./make_prediction2.sh
+```
+
+4. Delete the cluster
+```
+minikube delete
+```
 
 ## Project Overview
 
